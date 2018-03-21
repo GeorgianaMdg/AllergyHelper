@@ -215,7 +215,15 @@ Main Components
 
 @import url("https://fonts.googleapis.com/css?family=Lobster");
 body {
-  background-image: url('https://i.imgur.com/nJuYQ2N.jpg');
+  background-image: none;
+  background-color: #191919;
+  background-size: 100%;
+  font-family: "Lobster", serif;
+}
+
+#login {
+  background-image: none;
+  background-color: #191919;
   background-size: 100%;
   font-family: "Lobster", serif;
 }
@@ -441,4 +449,66 @@ a {
 .glow-button:hover {
  color: rgba(255, 255, 255, 1);
  box-shadow: 0 5px 15px rgba(4, 201, 129, .4);
+}
+
+form, .content {
+  position: absolute;
+  width: 30%;
+  height: 42.5%;
+  left: 35%;
+  top: 25%;
+  margin: 0px auto;
+  padding: 20px;
+  border-radius: 10px 10px 10px 10px;
+  background: #202020;
+
+}
+
+label {
+  font-family: 'Josefin Sans', sans-serif;
+}
+#hdr {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 54px;
+  text-align: center;
+
+}
+.header {
+  width: 30%;
+  margin: 50px auto 0px;
+  color: white;
+  background: #5F9EA0;
+  text-align: center;
+  border: 1px solid #B0C4DE;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  padding: 20px;
+}
+
+input, select {
+    font-family: 'Josefin Sans', sans-serif;
+    width: 100%;
+    font-size: 15px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #ccc;
+    background-color: #333333;
+    box-sizing: border-box;
+}
+
+.error {
+  width: 92%; 
+  top: 30%;
+  left: 30%;
+  position: absolute;
+  margin: 0px auto; 
+  padding: 10px; 
+  border: 1px solid #a94442; 
+  color: #a94442; 
+  background: #f2dede; 
+  border-radius: 5px; 
+  text-align: left;
 }
