@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
@@ -14,29 +14,30 @@
 </head>
 <!-- hijacking: on/off - animation: none/scaleDown/rotate/gallery/catch/opacity/fixed/parallax -->
 
-<body data-hijacking="off" data-animation="scaleDown">
-	<section class="cd-section visible">
-		<div class="main-container">
-  <div class="first-container share">
-     <h1><span id="one">A</span><span>l</span><span>l</span><span>e</span><span>r</span><span>g</span><span>y</span><span>H</span><span>e</span><span>l</span><span>p</span></h1>
-  </div>
-  </div>
+<body data-hijacking="off">
+	<section class="cd-section visible" >
+		<header>
+			<div class="main-container">
+  				<div class="first-container share" style="font-family: "Lobster", serif;">
+    			 	<h1 id="noselect"><span id="one">A</span><span>l</span><span>l</span><span>e</span><span>r</span><span>g</span><span>y</span><span>H</span><span>e</span><span>l</span><span>p</span></h1>
+  				</div>
+  			</div>
+  			
+		</header>
+		<button id="register" class="fill">GET STARTED</button>
+		<h1 id="or">OR</h1>
+        <button id="login" class="fill">Login</button>
 	</section>
 
 	<section class="cd-section">
 		<div>
-			<h1>Section 2</h1>
+			<h1 id="selection">Section 2</h1>
 		</div>
 	</section>
 
 
 
-	<nav>
-		<ul class="cd-vertical-nav">
-			<li><a href="#0" class="cd-prev inactive">Next</a></li>
-			<li><a href="#0" class="cd-next">Prev</a></li>
-		</ul>
-	</nav> <!-- .cd-vertical-nav -->
+	 <!-- .cd-vertical-nav -->
 <script src="js/jquery-2.1.4.js"></script>
 <script src="js/velocity.min.js"></script>
 <script src="js/velocity.ui.min.js"></script>
