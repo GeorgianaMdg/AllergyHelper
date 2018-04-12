@@ -18,6 +18,19 @@ body {
 	background-color: #191919;
 	font-family: 'Josefin Sans', sans-serif;
 }
+input, select {
+    font-family: 'Josefin Sans', sans-serif;
+    width: 100%;
+    font-size: 15px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #ccc;
+    background-color: #333333;
+    box-sizing: border-box;
+}
 
 #settings {
   position: absolute;
@@ -121,9 +134,32 @@ body {
 		</nav>
 
 	</header>
-	<form id="settings">
-		
-	</form>
+	 <form id="settings">
+		  <div id="form">
+        <form action="/action_page.php">
+           <label for="fname">. </label>
+           <input type="text" id="name" name="iname" placeholder="Username..">
+
+          <label for="mail"> .</label>
+          <input type="text" id="email" name="email" placeholder="Your email..">
+          <label for="fname">. </label>
+          <input type="password" id="password" name="password" placeholder="Password..">
+          <label for="fname">. </label>
+          <select id="gender" name="gender" >
+            <option value="male">Select gender..</option>
+            <option value="male">male</option>
+            <option value="female">female</option>
+      
+          </select> 
+          <label for="fname"> .</label>
+          <input type="password" id="cpassword" name="cpassword" placeholder="Confirm password..">
+   
+          <label for="fname">. </label>
+  
+          <input type="submit" value="Save settings">
+        </form>
+      </div>
+	 </form>
 	<form id="notifications">
 
 	</form>
