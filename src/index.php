@@ -26,7 +26,7 @@
   			</div>
   			
 		</header>
-		<button class="btn button glow-button">GET STARTED</button>
+		<a href="register.php"><button class="btn button glow-button">GET STARTED</button></a>
 		<h1 id="or">OR</h1>
         <a href="login.php"><button class="btn button glow-button" style="left: 55%; top: 60%; padding-right: 30px;">LOGIN</button></a>
 	</section>
@@ -36,6 +36,12 @@
 			<h1 id="selection">Section 2</h1>
 		</div>
 	</section>
+	<section class="cd-section">
+		<div>
+			<h1 id="selection">Section 2</h1>
+		</div>
+	</section>
+
 
 
 

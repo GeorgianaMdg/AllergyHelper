@@ -1,4 +1,3 @@
-<?php $errors = array(); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,8 +6,7 @@
 	<title>AllergyHelp - Login</title>
 </head>
 <body id="login">
-		<form method="post" action="login.php">
-			<?php include('errors.php'); ?>
+		<form method="post">
 			<h1 id="hdr">Login Form</h1>
 					<div class="input-group">
 						<label>Username</label>
@@ -21,36 +19,38 @@
 						<input type="password" name="password">
 					</div>
 				<div class="input-group">
-			<button type="submit" class="btn button glow-button" name="login_user" style="top: 77%; ">Login</button>
+			<button type="submit" class="btn" name="login_user" style="top: 77%; left: 19%; ">Login</button>
 			</div>
 			</form>
 			<?php
 				session_start();
-					$username = "";
-					$email    = "";
-					$_SESSION['success'] = "";
-					$db = mysqli_connect('localhost', 'root', '', 'testdb');
-					if (isset($_POST['login_user'])) {
-						$username = mysqli_real_escape_string($db, $_POST['username']);
-						$password = mysqli_real_escape_string($db, $_POST['password']);
-						if (empty($username)) {
-							array_push($errors, "Username is required");
-						}
-						if (empty($password)) {
-							array_push($errors, "Password is required");
-						}
-						if (count($errors) == 0) {
-							$password = md5($password);
-							$query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
-							$results = mysqli_query($db, $query);
-
-							if (mysqli_num_rows($results) == 1) {
-								$_SESSION['username'] = $username;
-								$_SESSION['success'] = "You are now logged in";
-								header('location: home.php');
-							}else {
-								array_push($errors, "Wrong username/password combination");
-						}
+				$username = "";
+				$email    = "";
+				$errors = 0;
+				$_SESSION['success'] = "";
+				
+				$db = mysqli_connect('localhost', 'root', '', 'testdb');
+				if (isset($_POST['login_user'])) {
+					$username = mysqli_real_escape_string($db, $_POST['username']);
+					$password = mysqli_real_escape_string($db, $_POST['password']);
+					if (empty($username)) {
+						//eroare
+						$errors++;
+					}
+					if (empty($password)) {
+						//eroare
+						$errors++;
+					}
+					if ($errors == 0) {
+						$password = md5($password);
+						$query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
+						$results = mysqli_query($db, $query);
+						if (mysqli_num_rows($results) == 1) {
+							$_SESSION['username'] = $username;
+							header('location: home.php');
+						}else {
+						//erorare
+					}
 					}
 				}
 			 ?>

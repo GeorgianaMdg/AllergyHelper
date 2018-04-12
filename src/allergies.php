@@ -1,3 +1,4 @@
+
 <?php
 	session_start();
 
@@ -95,20 +96,19 @@ body {
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<title>Allergy Helper - Home</title>
+	<title>Allergy Helper - Allergies</title>
 </head>
-
 <body style="background-color: #191919;">
 	<header>
 		<nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #232323;">
 			<a class="navbar-brand" href="#">AllergyHelp</a>
 			      <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="home.php">Home <span class="sr-only">(current)</span></a>
       </li>
      
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link " href="allergies.php">Allergy List</a>
       </li>
     </ul>
@@ -119,16 +119,6 @@ body {
 
   </div>
 		</nav>
-
 	</header>
-	<form id="settings">
-		
-	</form>
-	<form id="notifications">
-
-	</form>
-	<form id="subscriptions">
-
-	</form>
 </body>
 </html>

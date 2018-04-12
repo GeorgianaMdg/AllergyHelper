@@ -431,7 +431,7 @@ a {
   position: absolute;
   padding: 15px 150px;
   font-size: 20px;
-  font-family: "Verdana";
+  font-family: 'Josefin Sans', sans-serif;
   font-weight: bold;
 }
 
@@ -501,9 +501,6 @@ input, select {
 
 .error {
   width: 92%; 
-  top: 30%;
-  left: 30%;
-  position: absolute;
   margin: 0px auto; 
   padding: 10px; 
   border: 1px solid #a94442; 
@@ -511,4 +508,11 @@ input, select {
   background: #f2dede; 
   border-radius: 5px; 
   text-align: left;
+}
+
+#register {
+  background-image: none;
+  background-color: #191919;
+  background-size: 100%;
+  font-family: 'Josefin Sans', sans-serif;
 }
