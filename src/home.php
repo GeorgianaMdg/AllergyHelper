@@ -179,7 +179,7 @@ input, select {
           <input type="submit" value="Save settings">
         </form>
         <label for="fname">. </label>
-        <center><img src="img/icon-allergy.jpeg" width="30%" height="30%"></center>
+        <center><img src="img/icon-allergy.jpeg" width="40%" height="30%"></center>
       </div>
 
 	 </form>
@@ -238,6 +238,7 @@ The National Pest Management Association reports that 63 percent of homes in the
           <p id="demo"></p>
    <script>
 function myFunction() {
+
     var x = document.getElementById("allergyList").value;
     document.getElementById("demo").innerHTML = x ;
 }
@@ -245,5 +246,16 @@ function myFunction() {
 
 
 	</form>
+  <div>    
+
+    <div style="position: absolute; bottom: 5px; color: gray;">
+    More informations about allergies on: <a href="https://acaai.org/allergies/types" target="_blank">https://acaai.org/allergies/types</a>
+
+    </div>
+</div>
 </body>
 </html>
+
+
+
+ 
