@@ -142,7 +142,7 @@ input, select {
       </li>
      
       <li class="nav-item">
-        <a class="nav-link " href="allergies.php">Allergy List</a>
+       
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
