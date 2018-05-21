@@ -15,7 +15,8 @@
 <style type="text/css">
 
 body {
-	background-color: #191919;
+	background-image: url(img/fundal.jpg);
+
 	font-family: 'Josefin Sans', sans-serif;
 }
 input, select {
@@ -31,7 +32,26 @@ input, select {
     background-color: #333333;
     box-sizing: border-box;
 }
+header{
+  background-image: url(img/green.jpg);
+  background-size: 100%;
+}
+.strokeme
+{
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+#vreme{
 
+  position: absolute;
+  top: 10%;
+  left: 83%
+
+}
 #settings {
   position: absolute;
   width: 20%;
@@ -41,9 +61,7 @@ input, select {
   margin: 0px auto;
   padding: 20px;
   color: white;
-  border-radius: 10px 10px 10px 10px;
-  background: #202020;
-}
+  }
 
 #notifications {
 	position: absolute;
@@ -53,8 +71,7 @@ input, select {
   top: 10%;
   margin: 0px auto;
   padding: 20px;
-  border-radius: 10px 10px 10px 10px;
-  background: #202020;
+  
   color: white;
   font-size: 14;
 }
@@ -63,13 +80,15 @@ input, select {
   position: absolute;
   width: 61%;
   height: 20%;
-  left: 25.5%;
+  left: 22.5%;
   top: 130%;
   margin: 0px auto;
   padding: 20px;
-  border-radius: 10px 10px 10px 10px;
-  background: #202020;
+  
   color: white;
+}
+#middle{
+  max-width: 900px;
 }
 
 .btn {
@@ -141,9 +160,9 @@ p.a{
 	<title>Allergy Helper - Home</title>
 </head>
 
-<body style="background-color: #191919;">
+<body >
 	<header>
-		<nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #232323;">
+		<nav class="navbar navbar-expand-sm navbar-dark strokeme" >
 			<a class="navbar-brand" href="#">AllergyHelp</a>
 			      <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
@@ -164,22 +183,25 @@ p.a{
 		</nav>
 
 	</header>
-	 <form id="settings">
-		  <div id="form">
+  
+   <form id="settings">
+      <div id="form">
          <p class="a">Allergies, also known as allergic diseases, are a number of conditions caused by hypersensitivity of the immune system to something in the environment that usually causes little or no problem in most people. These diseases include hay fever, food allergies, atopic dermatitis, allergic asthma, and anaphylaxis. Symptoms may include red eyes, an itchy rash, sneezing, a runny nose, shortness of breath, or swelling.
         </p>
         <p class="a"> Diagnosis is typically based on a person's medical history. Further testing of the skin or blood may be useful in certain cases. </p>
         <p class="a">Allergen immunotherapy, which gradually exposes people to larger and larger amounts of allergen, is useful for some types of allergies such as hay fever and reactions to insect bites. Its use in food allergies is unclear. Allergies are common. In the developed world, about 20% of people are affected by allergic rhinitis, about 6% of people have at least one food allergy, and about 20% have atopic dermatitis at some point in time. Depending on the country about 1–18% of people have asthma. Anaphylaxis occurs in between 0.05–2% of people. Rates of many allergic diseases appear to be increasing.</p>
       </div>
 
-	 </form>
+   </form>
+  <div id="middle" class="strokeme">
+    
 	<form id="notifications">
     <div class="row">
       <div class="column">
        
     </div>
     <div class="column">
-      <center><img src="img/allergies.JPG"></center>
+      
     </div>
   </div>
 	</form>
@@ -220,6 +242,7 @@ p.a{
             The National Pest Management Association reports that 63 percent of homes in the United States contain cockroach allergens. In urban areas, that number rises to between 78 and 98 percent of homes" class="a12">Cockroach allergy</option>
         </select> 
 
+
           <p id="demo"></p>
    <script>
 function myFunction() {
@@ -231,6 +254,7 @@ function myFunction() {
 
 
 	</form>
+</div>
   <div>    
 
     </div>
